@@ -1,0 +1,5 @@
+name: HyriPitchOut
+main: fr.hyriode.pitchout.HyriPitchOut
+version: @version@
+depend: [Hyrame]
+authors: [AstFaster]

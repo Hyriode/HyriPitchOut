@@ -1,0 +1,11 @@
+{
+  "game.description": "&fMontez à dos d'un mouton supersonique et éliminez vos adversaires en coupant leur chemin. Récupérez des power-ups sur la carte pour survivre et rendre la tâche plus compliquée aux autres joueurs.",
+
+  "player.kill": "%player% &7a glissé de la carte.",
+  "player.kill-player": "%player% &7s'est fait expulser par %killer%&7.",
+  "player.final-kill": "&b&lFINAL KILL!",
+
+  "scoreboard.time": "Temps: ",
+  "scoreboard.lives": "&fVies: &b%lives%",
+  "scoreboard.players": "Joueurs: "
+}
