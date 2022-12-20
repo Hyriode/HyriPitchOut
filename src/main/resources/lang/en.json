@@ -1,11 +1,11 @@
 {
-  "game.description": "&fRide on a supersonic sheep and eliminate all your opponents by cutting their way. Pick up power-ups on the map to survive and ot make it harder for other players.",
+  "game.description": "&fKick your opponents off the map with a bow and a knockback stick, but watch out, the ground is slipping!",
 
   "player.kill": "%player% &7slipped off the map.",
   "player.kill-player": "%player% &7got pushed away by %killer%&7.",
   "player.final-kill": "&b&lFINAL KILL!",
 
   "scoreboard.time": "Time: ",
-  "scoreboard.lives": "&fLives: &b%lives%",
+  "scoreboard.lives": "&fKills: &b%kills%",
   "scoreboard.players": "Players: "
 }

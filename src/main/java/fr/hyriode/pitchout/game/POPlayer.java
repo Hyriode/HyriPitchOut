@@ -28,6 +28,7 @@ public class POPlayer extends HyriGamePlayer {
     private POScoreboard scoreboard;
 
     private int lives = 5;
+    private int kills = 0;
 
     private final POGame game;
 
@@ -83,6 +84,8 @@ public class POPlayer extends HyriGamePlayer {
             } else {
                 final String killerName = killer.asHyriPlayer().getNameWithRank();
 
+                killer.addKill();
+
                 BroadcastUtil.broadcast(target -> POMessage.PLAYER_KILL_PLAYER.asString(target)
                         .replace("%player%", playerName)
                         .replace("%killer%", killerName));
@@ -110,6 +113,8 @@ public class POPlayer extends HyriGamePlayer {
                     + " " + POMessage.PLAYER_FINAL_KILL.asString(target));
         } else {
             final String killerName = killer.asHyriPlayer().getNameWithRank();
+
+            killer.addKill();
 
             BroadcastUtil.broadcast(target -> POMessage.PLAYER_KILL_PLAYER.asString(target)
                     .replace("%player%", playerName)
@@ -139,6 +144,18 @@ public class POPlayer extends HyriGamePlayer {
 
     public void removeLife() {
         this.lives--;
+    }
+
+    public int getKills() {
+        return this.kills;
+    }
+
+    public void addKill() {
+        this.kills++;
+
+        if (this.scoreboard != null) {
+            this.scoreboard.update();
+        }
     }
 
     public POScoreboard getScoreboard() {

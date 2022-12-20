@@ -20,10 +20,10 @@ public class POScoreboard extends HyriGameScoreboard<POGame> {
         this.addLines();
         this.addCurrentDateLine(0);
         this.addBlankLine(1);
-        this.addBlankLine(3);
-        this.addBlankLine(5);
-        this.addGameTimeLine(6, POMessage.SCOREBOARD_TIME.asString(this.player));
-        this.addBlankLine(7);
+        this.addBlankLine(4);
+        this.addBlankLine(6);
+        this.addGameTimeLine(7, POMessage.SCOREBOARD_TIME.asString(this.player));
+        this.addBlankLine(8);
         this.addHostnameLine();
     }
 
@@ -31,7 +31,8 @@ public class POScoreboard extends HyriGameScoreboard<POGame> {
         final POPlayer gamePlayer = this.game.getPlayer(this.player);
 
         this.setLine(2, POMessage.SCOREBOARD_LIVES.asString(this.player).replace("%lives%", String.valueOf(gamePlayer.getLives())));
-        this.addPlayersLine(4, POMessage.SCOREBOARD_PLAYERS.asString(this.player), true);
+        this.setLine(3, POMessage.SCOREBOARD_KILLS.asString(this.player).replace("%kills%", String.valueOf(gamePlayer.getKills())));
+        this.addPlayersLine(5, POMessage.SCOREBOARD_PLAYERS.asString(this.player), true);
     }
 
     public void update() {

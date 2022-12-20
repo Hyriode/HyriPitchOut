@@ -1,5 +1,5 @@
 {
-  "game.description": "&fMontez à dos d'un mouton supersonique et éliminez vos adversaires en coupant leur chemin. Récupérez des power-ups sur la carte pour survivre et rendre la tâche plus compliquée aux autres joueurs.",
+  "game.description": "&fExpulse tes adversaires de la carte à l'aide d'un arc et d'un batôn repulsant, mais prend garde, le sol glisse!",
 
   "player.kill": "%player% &7a glissé de la carte.",
   "player.kill-player": "%player% &7s'est fait expulser par %killer%&7.",
@@ -7,5 +7,6 @@
 
   "scoreboard.time": "Temps: ",
   "scoreboard.lives": "&fVies: &b%lives%",
+  "scoreboard.kills": "&fKills: &b%kills%",
   "scoreboard.players": "Joueurs: "
 }

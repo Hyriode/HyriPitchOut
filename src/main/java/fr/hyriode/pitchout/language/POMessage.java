@@ -23,6 +23,7 @@ public enum POMessage {
 
     SCOREBOARD_TIME("scoreboard.time"),
     SCOREBOARD_LIVES("scoreboard.lives"),
+    SCOREBOARD_KILLS("scoreboard.kills"),
     SCOREBOARD_PLAYERS("scoreboard.players"),
 
     ;
