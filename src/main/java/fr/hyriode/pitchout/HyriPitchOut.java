@@ -4,6 +4,7 @@ import fr.hyriode.api.HyriAPI;
 import fr.hyriode.hyrame.HyrameLoader;
 import fr.hyriode.hyrame.IHyrame;
 import fr.hyriode.hyrame.plugin.IPluginProvider;
+import fr.hyriode.hyrame.title.Title;
 import fr.hyriode.pitchout.config.POConfig;
 import fr.hyriode.pitchout.dev.DevConfig;
 import fr.hyriode.pitchout.game.POGame;
@@ -39,6 +40,8 @@ public class HyriPitchOut extends JavaPlugin implements IPluginProvider {
     @Override
     public void onEnable() {
         instance = this;
+
+        Title.sendTitle();
 
         for (String line : HEADER_LINES) {
             log(line);
